@@ -96,9 +96,9 @@ let noEstaHabilitada=[]
 
 let masJoven=12345
 let indexMasJoven=0
-let menorSaldo=11023984710934
+let menorSaldo=arrayCuentas[0].saldo
 let indexMenorSaldo=0
-let mayorSaldo=0
+let mayorSaldo=arrayCuentas[0].saldo
 let indexMayorSaldo=0
 for (let i=0;i!=arrayCuentas.length;i++){
     if(arrayCuentas[i].edadTitular<30){
@@ -114,11 +114,11 @@ for (let i=0;i!=arrayCuentas.length;i++){
         masJoven=arrayCuentas[i].edadTitular
         indexMasJoven=i
     }
-    if (arrayCuentas[i].tipoCuenta=="corriente"){
-        cuentacorriente.push[arrayCuentas[i]]
+    if (arrayCuentas[i].tipoCuenta=="sueldo"){
+        sueldo.push(arrayCuentas[i])
     }
     else{
-        sueldo.push(arrayCuentas[i])
+        cuentacorriente.push(arrayCuentas[i])
     }
     if (arrayCuentas[i].estaHabilitada==true){
         estaHabilitada.push(arrayCuentas[i])
